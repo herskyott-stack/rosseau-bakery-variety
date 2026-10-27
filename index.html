@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rosseau Bakery &amp; Variety — Rosseau, ON | Butter Tarts, Pizza, Village Bakery</title>
+<meta name="description" content="Rosseau Bakery &amp; Variety, 5 Victoria St E, Rosseau ON: butter tarts, cinnamon buns, fresh pizza, breads and variety essentials. Call (705) 732-4896.">
+<style>
+:root{--acc:#8a5a22;--acctx:#fff;--ink:#3d2c17;--bg:#fdf7ec}
+*{box-sizing:border-box}body{margin:0;font-family:'Palatino Linotype',Palatino,Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.hero{padding:2.4rem 1rem;text-align:center;background:linear-gradient(180deg,#f3e3c2,#fdf7ec)}
+h1{font-size:2.6rem;margin:.2rem 0}
+.wrap{max-width:980px;margin:0 auto;padding:0 1rem 2rem}
+.split{display:grid;grid-template-columns:3fr 2fr;gap:1.6rem}@media(max-width:700px){.split{grid-template-columns:1fr}}
+.box{background:#fff;border:1px solid #e0cba0;border-radius:10px;padding:1.3rem}
+.box h2{margin-top:0;color:#8a5a22}
+.cta{display:inline-block;background:#8a5a22;color:#fff;padding:.8rem 1.4rem;border-radius:8px;text-decoration:none;font-weight:700}
+.foot{text-align:center;padding:1.2rem;font-size:.85rem;opacity:.75}
+
+.cform{display:grid;gap:.7rem;max-width:520px}
+.cform label{display:grid;gap:.3rem;font-size:.92rem;font-weight:600}
+.cform input,.cform select,.cform textarea{padding:.6rem .7rem;border:1px solid #0003;border-radius:8px;font:inherit;background:#fff;color:#111}
+.cform button{padding:.75rem 1rem;border:0;border-radius:8px;font:inherit;font-weight:700;cursor:pointer;background:var(--acc);color:var(--acctx,#fff)}
+.fnote{font-size:.85rem;opacity:.8}
+.fdone{font-weight:700}
+a{color:var(--acc)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <p style="letter-spacing:.2em;font-weight:700">ROSSEAU · MUSKOKA · ONTARIO</p>
+  <h1>Rosseau Bakery &amp; Variety</h1>
+  <p>The village bakery on Victoria Street — butter tarts worth the drive, fresh pizza, and the everyday essentials.</p>
+  <p><a class="cta" href="tel:+17057324896">Call (705) 732-4896</a></p>
+  <p>Rated 4.3★ from 74 Google reviews</p>
+</div>
+<div class="wrap">
+  <div class="split">
+    <section class="box">
+      <h2>From the ovens</h2>
+      <ul>
+        <li><strong>Butter tarts</strong> — the signature</li>
+        <li><strong>Cinnamon buns</strong> &amp; date squares</li>
+        <li><strong>Strawberry shortcake</strong> (gluten-free options)</li>
+        <li><strong>Caramel pecan brownie</strong></li>
+        <li><strong>Fresh pizza</strong> — call ahead</li>
+        <li><strong>Meat pies</strong>, breads &amp; daily baking</li>
+      </ul>
+      <h2>The variety side</h2>
+      <p>Groceries and convenience essentials for the village and the cottage run — one stop on Victoria Street East.</p>
+    </section>
+    <section class="box">
+      <h2>Hours</h2>
+      <p>Monday – Friday: <strong>6 a.m. – 7 p.m.</strong><br>Saturday: <strong>8 a.m. – 7 p.m.</strong><br>Sunday: <strong>9 a.m. – 4 p.m.</strong></p>
+      <p>5 Victoria St E, Rosseau, ON P0C 1J0</p>
+      <h2>Pre-orders</h2>
+      
+      <form class="cform" onsubmit="event.preventDefault();var r='RBV-'+Math.floor(1000+Math.random()*9000);document.getElementById('RBVref').textContent=r;document.getElementById('RBVdone').style.display='block';this.querySelector('button').disabled=true;">
+        <label>Your name<input type="text" required autocomplete="name"></label>
+        <label>Phone<input type="tel" required autocomplete="tel"></label>
+        <label>Service<select>
+          <option>Pizza order request</option>
+          <option>Baking pre-order</option>
+          <option>General question</option>
+        </select></label>
+        <label>Details (optional)<textarea rows="3"></textarea></label>
+        <button type="submit">Send request</button>
+        <p class="fnote">Concept preview form — it doesn't send or store anything yet. To reach us today, please call (705) 732-4896.</p>
+        <p class="fdone" id="RBVdone" style="display:none">Reference: <strong id="RBVref"></strong> — concept only; please call to confirm.</p>
+      </form>
+    </section>
+  </div>
+</div>
+<footer class="foot"><p>Concept website designed for Rosseau Bakery & Variety · Built by Jake Hersky — Ottawa web designer · hersky.info</p></footer>
+
+</body>
+</html>
